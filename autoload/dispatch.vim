@@ -564,7 +564,7 @@ function! dispatch#compile_command(bang, args, count) abort
     endif
     let request.command = args
   endif
-  let request.format = substitute(request.format, ',%-G%\.%#\%($\|,\@=\)', '', '')
+  "let request.format = substitute(request.format, ',%-G%\.%#\%($\|,\@=\)', '', '')
 
   if empty(request.compiler)
     unlet request.compiler
